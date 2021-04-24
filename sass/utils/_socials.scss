@@ -1,0 +1,44 @@
+.social-list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+
+    &__item + &__item {
+       margin-left: 10px;
+}
+}
+
+
+
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color $animation, fill $animation;
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+}
+}
+
+.social-icons__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icons-color;
+
+  transition: fill $animation;
+
+    .social-icons__link:hover &,
+    .social-icons__link:focus & {
+         fill: $dark-bg-text-color;
+}
+}
+
+
+
