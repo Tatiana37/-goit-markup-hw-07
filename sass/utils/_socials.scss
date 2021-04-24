@@ -18,11 +18,11 @@
   border-radius: 50%;
 
   transition: background-color $animation, fill $animation;
-}
 
-.social-icon__link:hover,
-.social-icon__link:focus {
-  background-color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .social-icons__icon {

@@ -31,3 +31,34 @@
     color: $dark-bg-text-color;
   }
 }
+
+.hero__button {
+  display: block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $dark-bg-text-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: $accent-color;
+
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

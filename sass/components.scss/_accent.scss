@@ -6,24 +6,29 @@
 .accent {
   display: flex;
   align-items: baseline;
-}
 
-.accent__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  color: $title-color;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: $title-color;
+  }
+
+  &__paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .accent__item {
   max-width: 270px;
-}
 
-.accent__item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .accent__item::before {
@@ -52,9 +57,4 @@
 
 .accent__iconastronaut::before {
   background-image: url(../images/icons/astronaut.svg);
-}
-
-.accent__paragraph {
-  margin-top: 0;
-  margin-bottom: 0;
 }

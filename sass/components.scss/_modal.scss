@@ -35,6 +35,15 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: trasform $animation;
+
+  &__ title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+    color: $title-color;
+  }
 }
 
 .modal__btn-close {
@@ -61,20 +70,11 @@
   position: absolute;
 
   transition: fill $animation;
-}
 
-.modal__btn-close:hover .btn-close__icon,
-.modal__btn-close:focus .btn-close__icon {
-  fill: $accent-color;
-}
-
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  margin-bottom: 12px;
-  color: $title-color;
+  .modal__btn-close:hover &,
+  .modal__btn-close:focus & {
+    fill: $accent-color;
+  }
 }
 
 .modal__field {
@@ -119,13 +119,13 @@
   outline: $accent-color;
 
   transition: border $animation;
-}
 
-.modal__textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal__icon {
@@ -139,6 +139,11 @@
   height: 18px;
 
   transition: fill $animation;
+
+  .modal__input:hover + &,
+  .modal__input:focus + & {
+    fill: $accent-color;
+  }
 }
 
 .modal__input:hover,
@@ -146,11 +151,6 @@
 .modal__textarea:hover,
 .modal__textarea:focus {
   border: 1px solid $accent-color;
-}
-
-.modal__input:hover + .modal__icon,
-.modal__input:focus + .imodal__icon {
-  fill: $accent-color;
 }
 
 .modal__checkbox {
@@ -170,18 +170,18 @@
   cursor: pointer;
 
   transition: border-color $animation;
-}
 
-.checkbox__input:hover + .checkbox__icon {
-  border-color: $accent-color;
-}
+  .checkbox__input:hover + & {
+    border-color: $accent-color;
+  }
 
-.checkbox__input:checked + .checkbox__icon {
-  border-color: $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/icons/check.svg);
-  background-size: contain;
-  background-origin: border-box;
+  .checkbox__input:checked + & {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/icons/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
 }
 
 .checkbox__title {
@@ -193,9 +193,40 @@
 .checkbox__link {
   color: $accent-color;
   transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: #188ce8;
+  }
 }
 
-.checkbox__link:hover,
-.checkbox__link:focus {
-  color: #188ce8;
+.modal__button {
+  display: block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $dark-bg-text-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: $accent-color;
+
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

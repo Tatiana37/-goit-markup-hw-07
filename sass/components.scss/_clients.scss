@@ -2,14 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.clients-icons__item + .clients-icons__item {
-  margin-left: 30px;
+  &__item + &__item {
+    margin-left: 30px;
+  }
 }
 
 .clients-icons__icon {
   transition: fill $animation;
+
+  .clients-icons__link:hover &,
+  .clients-icons__link:focus & {
+    fill: $accent-color;
+  }
 }
 
 .clients-icons__link {
@@ -23,14 +28,9 @@
   fill: $icons-color;
 
   transition: border $animation;
-}
 
-.clients-icons__link:hover,
-.clients-icons__link:focus {
-  border-color: $accent-color;
-}
-
-.clients-icons__link:hover .clients-icons__icon,
-.clients-icons__link:focus .clients-icons__icon {
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
 }
