@@ -16,7 +16,6 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
   @include transition(background-color, fill);
 
   &:hover,
@@ -29,7 +28,6 @@
   width: 20px;
   height: 20px;
   fill: $icons-color;
-
   @include transition(fill);
 
   .social-icons__link:hover &,

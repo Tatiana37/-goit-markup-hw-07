@@ -24,7 +24,6 @@
   text-align: center;
   color: $title-color;
   outline: $accent-color;
-
   @include transition(color, background-color, box-shadow);
 
   &--current,

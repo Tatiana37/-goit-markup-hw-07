@@ -97,16 +97,10 @@
     color: inherit;
   }
 }
-// .contacts__link {
-//   display: block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-// }
 
 .contacts__icon {
   margin-right: 10px;
   fill: $icons-color;
-
   @include transition(fill);
 
   .contacts__link:hover &,
