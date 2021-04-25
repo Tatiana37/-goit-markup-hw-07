@@ -16,7 +16,8 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  @include transition(background-color, fill);
+  @include transition(background-color);
+  @include transition(fill);
 
   &:hover,
   &:focus {
