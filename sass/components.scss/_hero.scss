@@ -55,7 +55,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: $accent-color;
 
-  transition: background-color $animation;
+  @include transition(background-color);
 
   &:hover,
   &:focus {

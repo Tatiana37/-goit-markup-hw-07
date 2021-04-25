@@ -9,7 +9,7 @@
 }
 
 .clients-icons__icon {
-  transition: fill $animation;
+  @include transition(fill);
 
   .clients-icons__link:hover &,
   .clients-icons__link:focus & {
@@ -27,7 +27,7 @@
   border-radius: 4px;
   fill: $icons-color;
 
-  transition: border $animation;
+  @include transition(border);
 
   &:hover,
   &:focus {

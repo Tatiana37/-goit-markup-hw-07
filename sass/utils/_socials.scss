@@ -17,7 +17,7 @@
   height: 44px;
   border-radius: 50%;
 
-  transition: background-color $animation, fill $animation;
+  @include transition(background-color, fill);
 
   &:hover,
   &:focus {
@@ -30,7 +30,7 @@
   height: 20px;
   fill: $icons-color;
 
-  transition: fill $animation;
+  @include transition(fill);
 
   .social-icons__link:hover &,
   .social-icons__link:focus & {
