@@ -357,19 +357,19 @@ a:hover, a:focus {
   margin-bottom: 30px;
 }
 
-.accent__iconantenna::before {
+.accent__icon-antenna::before {
   background-image: url(../images/icons/antenna.svg);
 }
 
-.accent__iconclock::before {
+.accent__icon-clock::before {
   background-image: url(../images/icons/clock.svg);
 }
 
-.accent__icondiagram::before {
+.accent__icon-diagram::before {
   background-image: url(../images/icons/diagram.svg);
 }
 
-.accent__iconastronaut::before {
+.accent__icon-astronaut::before {
   background-image: url(../images/icons/astronaut.svg);
 }
 
