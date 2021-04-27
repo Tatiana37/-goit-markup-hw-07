@@ -2,7 +2,7 @@
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  $grid-item: 3;
+  --grid-item: 3;
 }
 
 .exampls__link {
@@ -30,7 +30,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  @include transition(transform, background-color);
+  transition: transform var(--animation), background-color var(--animation);
   transform: translateY(101%);
 
   &__text {
@@ -38,7 +38,7 @@
     line-height: 1.55;
     width: 322px;
     margin-bottom: 0;
-    color: $dark-bg-text-color;
+    color: var(--dark-bg-text-color);
   }
 
   .exampls__link:hover &,
@@ -61,7 +61,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: $title-color;
+    color: var(--title-color);
   }
 
   &__paragraph {
@@ -69,6 +69,6 @@
     margin-bottom: 0;
     font-size: 16px;
     line-height: 1.87;
-    color: $main-text-color;
+    color: var(--main-text-color);
   }
 }

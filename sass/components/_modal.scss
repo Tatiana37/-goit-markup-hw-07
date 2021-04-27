@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  @include transition(opacity);
+  transition: opacity var(--animation);
 }
 
 .backdrop.is-hidden {
@@ -28,13 +28,13 @@
   min-width: 530px;
   min-height: 580px;
   padding: 40px;
-  background-color: $dark-bg-text-color;
+  background-color: var(--dark-bg-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
-  @include transition(transform);
+  transition: trasform var(--animation);
 
   &__ title {
     font-weight: 700;
@@ -42,7 +42,7 @@
     line-height: 1.15;
     text-align: center;
     margin-bottom: 12px;
-    color: $title-color;
+    color: var(--title-color);
   }
 }
 
@@ -58,21 +58,21 @@
   height: 30px;
   padding: 15px;
 
-  background-color: $dark-bg-text-color;
+  background-color: var(--dark-bg-text-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
-  outline: $accent-color;
+  outline: var(--accent-color);
 }
 
 .btn-close__icon {
   position: absolute;
-  @include transition(fill);
+  transition: fill var(--animation);
 
   .modal__btn-close:hover &,
   .modal__btn-close:focus & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
@@ -101,8 +101,9 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  outline: $accent-color;
-  @include transition(border);
+  outline: var(--accent-color);
+
+  transition: border var(--animation);
 }
 
 .modal__textarea {
@@ -114,8 +115,9 @@
   border-radius: 4px;
   resize: none;
   cursor: pointer;
-  outline: $accent-color;
-  @include transition(border);
+  outline: var(--accent-color);
+
+  transition: border var(--animation);
 
   &::placeholder {
     font-size: 12px;
@@ -134,11 +136,11 @@
 
   width: 18px;
   height: 18px;
-  @include transition(fill);
+  transition: fill var(--animation);
 
   .modal__input:hover + &,
   .modal__input:focus + & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
@@ -146,7 +148,7 @@
 .modal__input:focus,
 .modal__textarea:hover,
 .modal__textarea:focus {
-  border: 1px solid $accent-color;
+  border: 1px solid var(--accent-color);
 }
 
 .modal__checkbox {
@@ -160,19 +162,19 @@
   height: 15px;
   margin-left: 14px;
   margin-right: 4px;
-  border: 1px solid $title-color;
+  border: 1px solid var(--title-color);
   border-radius: 2px;
   box-sizing: border-box;
   cursor: pointer;
-  @include transition(border-color);
+  transition: border-color var(--animation);
 
   .checkbox__input:hover + & {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
   }
 
   .checkbox__input:checked + & {
-    border-color: $accent-color;
-    background-color: $accent-color;
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
     background-image: url(../images/icons/check.svg);
     background-size: contain;
     background-origin: border-box;
@@ -186,8 +188,8 @@
 }
 
 .checkbox__link {
-  color: $accent-color;
-  @include transition(color);
+  color: var(--accent-color);
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
@@ -213,11 +215,12 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: $dark-bg-text-color;
-  background-color: $accent-color;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  outline: $accent-color;
-  @include transition(background-color);
+  outline: var(--accent-color);
+
+  transition: background-color var(--animation);
 
   &:hover,
   &:focus {

@@ -34,30 +34,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $main-text-color;
+  color: var(--main-text-color);
 }
 
 a {
   text-decoration: none;
-  @include transition(color);
+
+  transition: color var(--animation);
 
   &:hover,
   &:focus {
-    color: $accent-color;
-  }
-}
-
-.block {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
-    color: $title-color;
+    color: var(--accent-color);
   }
 }

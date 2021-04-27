@@ -9,11 +9,11 @@
 }
 
 .clients-icons__icon {
-  @include transition(fill);
+  transition: fill var(--animation);
 
   .clients-icons__link:hover &,
   .clients-icons__link:focus & {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 
@@ -23,13 +23,13 @@
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid $icons-color;
+  border: 1px solid var(--icons-color);
   border-radius: 4px;
-  fill: $icons-color;
-  @include transition(border);
+  fill: var(--icons-color);
+  transition: border var(--animation);
 
   &:hover,
   &:focus {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
   }
 }
